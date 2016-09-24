@@ -1,9 +1,7 @@
-﻿using System;
-
-namespace IridiumIon.NeptuniumKit.ComponentModel
+﻿namespace IridiumIon.NeptuniumKit.ComponentModel
 {
     public interface INotifyPropertyChanged
     {
-        event EventHandler<string> PropertyChanged;
+        event PropertyChangedEventHandler PropertyChanged;
     }
 }

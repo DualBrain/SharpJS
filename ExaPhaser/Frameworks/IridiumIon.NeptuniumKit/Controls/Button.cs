@@ -42,9 +42,9 @@ namespace IridiumIon.NeptuniumKit.Controls
             UnderlyingJQElement.Css("padding-top", topSpacing);
         }
 
-        public override void UpdateStyles(object sender, string propertyName)
+        public override void UpdateStyles(object sender, PropertyChangedEventArgs e)
         {
-            base.UpdateStyles(sender, propertyName);
+            base.UpdateStyles(sender, e);
 
             UpdateSizeLayout(); //The text size affects size layout
         }

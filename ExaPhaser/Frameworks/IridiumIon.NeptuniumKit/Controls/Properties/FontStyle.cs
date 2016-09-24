@@ -1,5 +1,4 @@
 ﻿using IridiumIon.NeptuniumKit.ComponentModel;
-using System;
 
 namespace IridiumIon.NeptuniumKit.Controls.Properties
 {
@@ -17,9 +16,9 @@ namespace IridiumIon.NeptuniumKit.Controls.Properties
 
         public void OnPropertyChanged(string propertyName)
         {
-            PropertyChanged?.Invoke(this, propertyName);
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public event EventHandler<string> PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

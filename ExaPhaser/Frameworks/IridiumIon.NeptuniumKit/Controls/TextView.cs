@@ -1,4 +1,5 @@
-﻿using IridiumIon.NeptuniumKit.Controls.Properties;
+﻿using IridiumIon.NeptuniumKit.ComponentModel;
+using IridiumIon.NeptuniumKit.Controls.Properties;
 using SharpJS.Dom.Elements;
 
 namespace IridiumIon.NeptuniumKit.Controls
@@ -23,7 +24,7 @@ namespace IridiumIon.NeptuniumKit.Controls
             Style = new FontStyle(); //Trigger UpdateStyles()
         }
 
-        public virtual void UpdateStyles(object sender, string propertyName)
+        public virtual void UpdateStyles(object sender, PropertyChangedEventArgs e)
         {
             UnderlyingJQElement.Css("font-size", $"{Style.TextSize}pt");
             switch (Style.Weight)

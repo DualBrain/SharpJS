@@ -44,6 +44,8 @@
     <Compile Include="ComponentModel\ICommand.cs" />
     <Compile Include="ComponentModel\INotifyPropertyChanged.cs" />
     <Compile Include="ComponentModel\IRaisePropertyChanged.cs" />
+    <Compile Include="ComponentModel\PropertyChangedEventArgs.cs" />
+    <Compile Include="ComponentModel\PropertyChangedEventHandler.cs" />
     <Compile Include="Controls\Button.cs" />
     <Compile Include="Controls\ContainerView.cs" />
     <Compile Include="Controls\NKView.cs" />
@@ -57,6 +59,7 @@
     <Compile Include="Controls\Properties\SizeMode.cs" />
     <Compile Include="Controls\TextView.cs" />
     <Compile Include="Mvvm\DelegateCommand.cs" />
+    <Compile Include="Mvvm\ViewModelBase.cs" />
     <Compile Include="NKApplication.cs" />
     <Compile Include="NKBootstrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
