@@ -1,4 +1,5 @@
 ﻿using IridiumIon.NeptuniumKit.ComponentModel;
+using IridiumIon.NeptuniumKit.Controls.Properties;
 using SharpJS.Dom.Elements;
 using System;
 
@@ -46,7 +47,8 @@ namespace IridiumIon.NeptuniumKit.Controls
         {
             base.UpdateStyles(sender, e);
 
-            UpdateSizeLayout(); //The text size affects size layout
+            if (SizeMode != SizeMode.Automatic) //Redirect all manual sizemodes to the update size layout
+                UpdateSizeLayout(); //The text size affects size layout
         }
     }
 }
