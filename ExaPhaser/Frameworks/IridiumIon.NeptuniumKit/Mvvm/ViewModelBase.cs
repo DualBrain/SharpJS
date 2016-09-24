@@ -5,7 +5,7 @@ namespace IridiumIon.NeptuniumKit.Mvvm
     /// <summary>
 	/// A base class for NeptuniumKit ViewModels
 	/// </summary>
-	public class ViewModelBase : IRaisePropertyChanged
+	public class ViewModelBase : IRaisePropertyChanged, INotifyPropertyChanged
     {
         #region INotifyPropertyChanged Members
 
