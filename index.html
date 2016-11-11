@@ -1,277 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <title>SharpJS - C# to HTML5/JS</title>
+    <title>SharpJS (Legacy)</title>
 
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Custom CSS -->
-        <link href="css/grayscale.css" rel="stylesheet">
-        <link href="css/sharpjs.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/sharpjs.css" rel="stylesheet">
 
-        <!-- Custom Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    </head>
+</head>
 
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                        <i class="fa fa-play-circle"></i> <span class="light">SharpJS</span>
-                    </a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#page-top">Home</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#about">About</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#see-license">Download</a>
-                        </li>
-
-                        <li>
-                            <a class="page-scroll" href="#quickstart">Quick Start</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#documentation">Documentation</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">SharpJS (Legacy)</span>
+                </a>
             </div>
-            <!-- /.container -->
-        </nav>
 
-        <!-- Intro Header -->
-        <header class="intro">
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h1 class="brand-heading">SharpJS</h1>
-                            <p class="intro-text">Create cross-platform HTML5/JS apps with C#/.NET (XAML too, soon) [Open Source!]</p>
-                            <a href="#about" class="btn btn-circle page-scroll">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page-top">Home</a>
+                    </li>
+                </ul>
             </div>
-        </header>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-        <!-- About Section -->
-        <section id="about" class="container content-section">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="text-center">
-                        <h2>About SharpJS</h2>
-                    </div>
-                    <p>
-                        SharpJS is an open-source framework that compiles C# code into HTML and JavaScript to run anywhere. ExaPhaser.WebForms, the UI framework of SharpJS comes with support for multiple well-known CSS frameworks to give your applications an elegant style out-of
-                        the box. It also has managed wrapper classes for interacting with the DOM, and experimental jQuery support.
-                    </p>
-                    <p>
-                        Another UI renderer for SharpJS based on XAML and Material Design is coming soon! Stay tuned!
-                    </p>
-                    <p>
-                        Its .NET runtime engine is powered by <a href="http://jsil.org">JSIL</a>. While JSIL was written to easily port XNA games to run on the Web, SharpJS adds a set of APIs and classes for building GUI applications, with C# classes
-                        that are later mapped to native HTML5 elements. The HTML5 applications also utilize modern CSS frameworks such as Foundation 6 and Bootstrap.
-                    </p>
-                    <p>
-                        SharpJS's simple structure makes it relatively straightforward to port existing Silverlight and Windows Forms applicaations directly to HTML5. You can view demos <a target="_blank" href="https://github.com/ZetaPhase/SharpJS-Demos">here</a>.
-                    </p>
-                    <p>
-                        Since SharpJS compiles your applications directly to HTML5 and JavaScript, they can run offline in the browser, online served by a server, in a mobile app built with PhoneGap, in a desktop app built with Electron, or in any other technology that allows
-                        you to build applications with web technologies.
-                    </p>
-                    <div class="text-center">
-                        <a href="#see-license" class="page-scroll btn btn-default btn-lg">Get SharpJS</a>
-                    </div>
-                </div>
-        </section>
-
-        <!-- License/Download Section -->
-        <section id="see-license" class="container content-section">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-
-                    <div id="licensing-agreement">
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">SharpJS (Legacy)</h1>
+                        <p class="intro-text">Create cross-platform HTML5/JS apps with C#/.NET (XAML too, soon) [Open Source!]</p>
+                        <h2>SharpJS has a new home!</h2>
                         <div class="text-center">
-                            <h2>SharpJS - License Acceptance</h2>
-                            <h4>You must read and agree to the terms of the <a target="_blank" href="https://github.com/exaphaser/SharpJS/blob/master/LICENSE.md">license</a>                            to download and use the software.</h4>
+                            <a href="https://iridiumion.github.io/SharpJS/" class="page-scroll btn btn-default btn-lg">Visit New Homepage</a>
                         </div>
-
-                        <p>
-                            SharpJS is open-source software! The source is available on <a href="https://github.com/exaphaser/SharpJS">GitHub</a>. SharpJS is maintained by 0xFireball from ExaPhaser Industries.
-                        </p>
-                        <p>
-                            See the <strong><a target="_blank" href="https://github.com/exaphaser/SharpJS/blob/master/LICENSE.md">LICENSE</a></strong> file in the repository for more information. Before you use SharpJS, you must read and agree to the
-                            terms of the license.
-                        </p>
-                        <div class="text-center">
-                            <a id="license-acceptbtn" class="btn btn-default btn-lg">I have read and accept the license</a>
-                            <a id="license-reject" class="btn btn-dangers btn-lg">I do not accept the license</a>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-        </section>
-
-
-
-        <!-- Download Section -->
-        <section id="finaldownload" class="content-section text-center">
-            <div class="download-section" id="final-download-section">
-                <div class="container">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h2>Download SharpJS</h2>
-                        <p>
-                            SharpJS can be installed and used in numerous ways. You can install the NuGet package and build an application based on the templates <a href="https://github.com/exaphaser/SharpJS/tree/master/VSAddin/">here</a>, install the
-                            Visual Studio extension, or build the source yourself and reference it in your application. See <a href="https://github.com/exaphaser/SharpJS/wiki/Building-from-Source">the instructions</a> for information on how to build SharpJS
-                            from source.
-                        </p>
-                        <h4>What's new in SharpJS 1.6.x</h4>
-                        <p>
-                            A sleek, brand-new loading screen! The old one had a clunky look, so I redesigned it to look beautiful and modern. If you want to update an existing project, copy the html templates from the <a href="https://github.com/exaphaser/SharpJS/tree/master/VSAddin/">VSAddin folder on GitHub.</a>
-                        </p>
-                        <p>
-                            Material Design as the default theme for ExaPhaser.WebForms. NeptuniumKit, based on XAML, is coming soon!
-                        </p>
-                        <h3>SharpJS WebForms extension</h3>
-                        <a href="https://visualstudiogallery.msdn.microsoft.com/648fec24-a76e-45d6-bc4a-f894adb58e2d" class="btn btn-default btn-lg">Download Visual Studio Extension</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <!-- Quick Start Section -->
-        <section id="quickstart" class="container content-section">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="text-center">
-                        <h2>Quick Start!</h2>
-                        <h4>Get started super fast with SharpJS!</h4>
-                    </div>
-                    <h3>A brief overview</h3>
-                    <p>
-                        SharpJS is an open source framework for creating powerful HTML5/JS applications with C#. As of right now, SharpJS uses <code>ExaPhaser.WebForms</code>, a library that is a core part of SharpJS, to render a HTML5 UI in the browser.
-                        This in turn is built on top of <code>SharpJS.Dom</code> and <code>SharpJS.JSLibraries</code>, a bridge between JavaScript and C#. These libraries contain bindings for HTML5 DOM and jQuery, respectively. Right now, UI is defined
-                        in C# code through property initializers, in a manner similar to how Xamarin.Forms's non-XAML layout works, if you're familiar with that. Unlike WinForms, your UI code is still neat and easy to visualize. It looks somewhat like
-                        JSON, too.
-                        <b>Before you ask, yes, a XAML-inspired UI framework with Material Design is coming soon!</b>
-                    </p>
-                    <h3>Step 1 - Getting set up</h3>
-                    <p>
-                        If you haven't already, <a target="_blank" href="#see-license" class="page-scroll">download the Visual Studio 2015 extension</a>. This will give you the templates and JS libraries, so you can start working a project very quickly.
-                        Be sure to restart VS after installing the extension.
-                    </p>
-                    <p>
-                        Once you have Visual Studio 2015 ready and open with the SharpJS extension, create a new ExaPhaser.WebForms project. You can find the SharpJS template under <code>Visual C# 
-                            &gt; SharpJS &gt ExaPhaser.WebForms Application</code>.
-                    </p>
-                    <img class="img-fluid tutorial-img" src="img/screenshots/1-creatingproject.png" />
-                    <p>
-                        Open the <code>MainForm.cs</code> C# file. This contains the layout and UI logic for the ExaPhaser.WebForms application. Feel free to modify it as you like; change the content or play around with adding new controls. If you're
-                        new to SharpJS, I highly recommend checking out the <a href="#documentation" class="page-scroll">docs</a> first.
-                    </p>
-                    <img class="img-fluid tutorial-img" src="img/screenshots/1-insideproject.png" />
-                    <h3>Step 2 - Running the app!</h3>
-                    <p>
-                        Now, you're ready to build and test out your SharpJS app! Build the project. Make sure the project restores the latest <code>SharpJS</code> package from NuGet. Once the project finishes building, browse to the <code>html</code>                        subdirectory of the output folder (<code>bin/Debug/html</code>). You should see a file called <code>index.html</code>, open it up in your favorite browser, and watch your SharpJS application run!
-                    </p>
-                    <p>
-                        SharpJS displays a beautiful loading animation while downloading assets and preparing the runtime.
-                    </p>
-                    <img class="img-fluid tutorial-img" src="img/screenshots/2-runningapp-loading.png" />
-                    <p>
-                        Your application is run and rendered with Material Design Bootstrap.
-                    </p>
-                    <img class="img-fluid tutorial-img" src="img/screenshots/2-runningapp-ready.png" />
-                    <p>
-                        You now have a working SharpJS app! SharpJS works by decompiling and translating your .NET libraries, so you can even reference other projects and call their code from your C# project! Have a good time building apps with SharpJS! And yes, XAML UI is coming
-                        soon!
-                    </p>
-                    <div class="text-center">
-                        <a href="#documentation" class="page-scroll btn btn-primary btn-lg">View the Docs</a>
-                    </div>
-                </div>
-        </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; 0xFireball, ExaPhaser Industries 2015-2016</p>
+        </div>
+    </footer>
 
-        <!-- Documentation Section -->
-        <section id="documentation" class="container content-section">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="text-center">
-                        <h2>SharpJS Documentation</h2>
-                    </div>
-                    <p>
-                        SharpJS is currently being documented with an auto-documentation generator. However, I am also actively working to add more and more documentation to the code. The available documentation can be used to help understand the SharpJS APIs. Currently, the
-                        ExaPhaser.WebForms, SharpJS.Dom, and SharpJS.JSLibraries frameworks are documented. More will be added soon. Pick a library below to read its documentation.
-                    </p>
-                    <div class="text-center">
-                        <a target="_blank" href="docs/webforms/" class="page-scroll btn btn-primary btn-lg">ExaPhaser.WebForms</a>
-                        <a target="_blank" href="docs/dom/" class="page-scroll btn btn-primary btn-lg">SharpJS.Dom</a>
-                        <a target="_blank" href="docs/libs/" class="page-scroll btn btn-primary btn-lg">SharpJS.JSLibraries</a>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-                    </div>
-                </div>
-        </section>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-        <!-- Footer -->
-        <footer>
-            <div class="container text-center">
-                <p>Copyright &copy; 0xFireball, ExaPhaser Industries 2015-2016</p>
-            </div>
-        </footer>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
 
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+    <script src="js/sharpjs.js"></script>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-
-        <!-- Plugin JavaScript -->
-        <script src="js/jquery.easing.min.js"></script>
-        <!-- Custom Theme JavaScript -->
-        <script src="js/grayscale.js"></script>
-
-        <script src="js/sharpjs.js"></script>
-
-    </body>
+</body>
 
 </html>
